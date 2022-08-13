@@ -5,5 +5,14 @@
 
 
 
-Console.WriteLine("Введите число ");
-int arg = Console.ReadLine();
+Console.WriteLine("Введите пятизначное число ");
+int arg = Convert.ToInt32(Console.ReadLine());
+
+if((arg / 10000) == (arg % 10) && (arg % 10000 / 1000) == (arg / 10 % 10))
+    
+    Console.WriteLine("Заданное число является ПАЛИНДРОМОМ.");
+
+else
+{
+    Console.WriteLine("Заданное число НЕявляется ПАЛИНДРОМОМ.");    
+}
