@@ -4,3 +4,6 @@
 // 23432 -> да
 
 
+
+Console.WriteLine("Введите число ");
+int arg = Console.ReadLine();
